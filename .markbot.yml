@@ -1,0 +1,41 @@
+repo: 'using-gridifier'
+canvasCourse: 'web-dev-2'
+
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - body-margin-0
+  - img-flex
+  - css
+  - responsive-css
+  - css-order-grid-main
+  - gridifier
+  - screenshots-all
+
+html:
+  - path: 'index.html'
+    has:
+      - 'h1 + div.grid > div.unit > figure > img + figcaption'
+      - 'img[src*="diplodocus.jpg"]'
+      - 'img[src*="hadrosaur.jpg"]'
+      - 'img[src*="iguanodon.jpg"]'
+      - 'img[src*="stegosaurus.jpg"]'
+      - 'img[src*="archeopteryx.jpg"]'
+      - 'img[src*="pteranodon.jpg"]'
+      - 'img[src*="rhamphorhynchus.jpg"]'
+      - '.unit.xs-1.s-1-2.m-1-2.l-1-4'
+    search:
+      - 'Diplodocus'
+      - 'Hadrosaur'
+      - 'Iguanodon'
+      - 'Stegosaurus'
+      - 'Archeopteryx'
+      - 'Pteranodon'
+      - 'Rhamphorhynchus'
+
+css:
+  - path: 'css/main.css'
+    has:
+      - ['figure', 'margin', '0']
+      - ['figcaption', 'padding', '.5em']
